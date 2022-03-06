@@ -1,0 +1,356 @@
+body{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --pinkColor:#f25454;
+    --grayColor:#666666;
+    --lineColor:#282828;
+}
+nav{
+    z-index: 999999;
+}
+
+.fixedItem{
+    position: fixed;
+    left: 3px;
+    top: 20%;
+    z-index: 99;
+}
+.fixedItem:hover{
+    color: var(--pinkColor);
+}
+
+nav ul li a:hover{
+    color: var(--pinkColor)!important;
+}
+nav ul li i:hover{
+    color: var(--pinkColor);
+}
+
+.home1 , .home2 , .home3{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.home1{
+    background-image: url(../images/slideshow-1.jpg);
+}
+.home2{
+    background-image: url(../images/slideshow-2.jpg);
+}
+.home3{
+    background-image: url(../images/slideshow-3.jpg);
+}
+.mainSlider .carousel-item h1 , h2{
+    font-weight:700!important;
+    font-size:70px!important;
+    line-height:70px!important;
+}
+
+.container{
+    margin-top: 7rem;
+}
+.header{
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.header h3{
+    position: relative;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    font-size: 38px;
+}
+.header h3::after{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 46%;
+    width: 50px;
+    height: 2px;
+    background-color: var(--lineColor);
+}
+.header h3::before{
+    content: "A";
+    font-size: 5rem;
+    position: absolute;
+    top: -120%;
+    left: 45%;
+    color: rgb(233, 233, 233);
+    z-index: -2;
+}
+.header p{
+    font-size: 18px;
+    line-height:25px;
+    color: #999999;
+}
+
+.contentP , .ourTeam p{
+    color:var(--grayColor);
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.line{
+    width: 100%;
+    height: 5px;
+    background-color: rgb(224, 224, 224);
+}
+.inLine1{
+    width: 80%;
+    height: 100%;
+    background-color: var(--pinkColor);
+}
+.inLine2{
+    width: 95%;
+    height: 100%;
+    background-color: var(--pinkColor);
+}
+.inLine3{
+    width: 85%;
+    height: 100%;
+    background-color: var(--pinkColor);
+}
+.inLine4{
+    width: 70%;
+    height: 100%;
+    background-color: var(--pinkColor);
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.start{
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.start h3{
+    position: relative;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    font-size: 38px;
+}
+.start h3::after{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 48%;
+    width: 50px;
+    height: 2px;
+    background-color: var(--lineColor);
+}
+.start h3::before{
+    content: "O";
+    font-size: 5rem;
+    position: absolute;
+    top: -120%;
+    left: 47%;
+    color: rgb(233, 233, 233);
+    z-index: -2;
+}
+.member1 i:hover {
+    color: var(--pinkColor);
+}
+.member1 h6:hover {
+    color: var(--pinkColor);
+}
+.member2 i:hover {
+    color: var(--pinkColor);
+}
+.member2 h6:hover {
+    color: var(--pinkColor);
+}
+.member3 i:hover {
+    color: var(--pinkColor);
+}
+.member3 h6:hover {
+    color: var(--pinkColor);
+}
+.member4 i:hover {
+    color: var(--pinkColor);
+}
+.member4 h6:hover {
+    color: var(--pinkColor);
+}
+
+
+.start2 h3{
+    position: relative;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    font-size: 38px;
+}
+.start2 h3::after{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 48%;
+    width: 50px;
+    height: 2px;
+    background-color: var(--lineColor);
+}
+.start2 h3::before{
+    content: "S";
+    font-size: 5rem;
+    position: absolute;
+    top: -120%;
+    left: 47%;
+    color: rgb(233, 233, 233);
+    z-index: -2;
+}
+.ResponsiveLayout:hover .pinkColor{
+    color: var(--pinkColor)!important;
+}
+
+.start3 h3{
+    position: relative;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    font-size: 38px;
+}
+.start3 h3::after{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 48%;
+    width: 50px;
+    height: 2px;
+    background-color: var(--lineColor);
+}
+.start3 h3::before{
+    content: "C";
+    font-size: 5rem;
+    position: absolute;
+    top: -120%;
+    left: 47%;
+    color: rgb(233, 233, 233);
+    z-index: -2;
+}
+
+.Revios img{
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    margin-top: 7rem;
+}
+.Revios .carousel-indicators .slideItem{
+    width: 12px!important;
+    height: 12px!important;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.start4 h3{
+    position: relative;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    font-size: 38px;
+}
+.start4 h3::after{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 48%;
+    width: 50px;
+    height: 2px;
+    background-color: var(--lineColor);
+}
+.start4 h3::before{
+    content: "G";
+    font-size: 5rem;
+    position: absolute;
+    top: -120%;
+    left: 47%;
+    color: rgb(233, 233, 233);
+    z-index: -2;
+}
+.Get h3{
+    color: #282828;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.address:hover span{
+    color: var(--pinkColor)!important;
+}
+.phone:hover span{
+    color: var(--pinkColor)!important;
+}
+.mail:hover span{
+    color: var(--pinkColor)!important;
+}
+.mail:hover .pinkCol{
+    color: var(--pinkColor)!important;
+}
+
+
+input{
+    margin: 0.5rem;
+    width: 30rem;
+    height: 2.5rem;
+    border: 1% solid rgba(221, 220, 220, 0.836);
+}
+.mes{
+    height: 10rem;
+}
+.buttonW{
+    width: 12rem;
+    height: 3rem;
+}
+
+.desc{
+    background-image: url(../images/bg\ map.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.ContactInfo:hover .pinkColor{
+    color: var(--pinkColor);
+}
+.up{
+    background-color: rgba(255, 45, 45, 0.363);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -5%;
+    left: 48%;
+}
+.up:hover{
+    background-color: rgb(224, 66, 66);
+}
+a{
+    text-decoration: none;
+}
+.hovPink1:hover{
+    color: var(--pinkColor)!important;
+}
+.tags p{
+    padding: 0.3rem;
+    margin: 0.5rem;
+    border: 1px solid #b0b0b0;
+}
+.tags p:hover{
+    color: var(--pinkColor);
+    border: 1px solid var(--pinkColor);
+}
+
+footer{
+    height: 4rem;
+    background-color: rgb(0, 0, 0);
+}
+.hovPink:hover{
+    color: var(--pinkColor);
+}
+.footP:hover .hovPink{
+    color: var(--pinkColor)!important;
+}
